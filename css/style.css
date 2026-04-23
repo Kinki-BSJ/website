@@ -37,50 +37,53 @@ header img {
 
 /* nav */
 nav ul {
-    width: 834px;
-    margin: 0 auto;
-    padding:0;
-    background-color: #b6a57f;
-    border: #aca36a solid;
-    border-width: 2px 3px;
-    list-style-type: none;
-    text-align: center;
-    margin-bottom:3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: auto;
+    margin: 0 0 24px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    list-style: none;
 }
 
 nav ul li {
-    width: 139px;
-    float: left;
-    line-height: 100%;
+    width: auto;
+    float: none;
 }
 
 nav ul li a {
     display: block;
-    padding: 13px 2px 5px;
-    border: 1px solid;
-    border-color: #e4d6b8 #8b7e63 #8b7e63 #e4d6b8;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background-color: #ffffff;
     text-decoration: none;
     font-weight: 600;
-    color: #ffffff;
+    color: #2b4c7e;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: 0.2s ease;
 }
 
 nav ul li a span {
-    font-family:Arial, Helvetica, sans-serif;
     display: block;
-    margin-top: 2px;
-    font-size: 85%;
-    font-weight: normal;
-    color: #eee8aa;
+    margin-top: 4px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    color: #6b7280;
 }
 
 nav ul li a:hover,
 nav ul li.active a {
-    color: #f4efc4;
+    background-color: #2b4c7e;
+    color: #ffffff;
 }
 
 nav ul li a:hover span,
 nav ul li.active span {
-    color: #fde337;
+    color: #dbeafe;
 }
 
 /* wrap */
