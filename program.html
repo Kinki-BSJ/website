@@ -2,17 +2,86 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<title>近畿植物学会</title>
+<title>近畿植物学会 | プログラム</title>
+<style>
+.program-hero {
+    margin-bottom: 36px;
+}
+
+.program-block {
+    padding: 28px 28px 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    line-height: 1.9;
+}
+
+.program-section + .program-section {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.program-section h4 {
+    margin: 0 0 12px;
+    font-size: 1.08rem;
+    color: #0f172a;
+}
+
+.program-section p {
+    margin: 0;
+    color: #475569;
+}
+
+.status-box {
+    margin-top: 18px;
+    padding: 18px 20px;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 16px;
+}
+
+.status-box p {
+    margin: 0 0 10px;
+}
+
+.status-box p:last-child {
+    margin-bottom: 0;
+}
+
+.status-list {
+    margin: 12px 0 0 1.2em;
+    padding-left: 0.8em;
+    color: #475569;
+}
+
+.status-list li + li {
+    margin-top: 8px;
+}
+
+.back-link-box {
+    margin-top: 36px;
+    padding: 18px 20px;
+    background: #f8fbff;
+    border: 1px solid #dbe3ee;
+    border-radius: 16px;
+}
+
+.back-link-box p {
+    margin: 0;
+}
+</style>
 </head>
+
 <body>
 <div id="bg">
-    <header>
-        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
-    </header>
+
     <nav>
-        <ul class="cf">
+        <ul>
             <li>
                 <a href="index.html">ホーム<span>Home</span></a>
             </li>
@@ -33,57 +102,70 @@
             </li>
         </ul>
     </nav>
+
+    <header>
+        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
+    </header>
+
     <div id="wrap">
-        <article id="content">
-            <h2>プログラム</h2>
-            <section>
-              <h3>2025年度（第14回）近畿植物学会講演会</h3>
-                 <p>　発表を希望する方は10月24日(金)、参加のみの方は11月4日(火)が登録締め切りです。
-              <h4 style="display:inline;">参加登録方法 : </h4>以下の「メールアドレス確認フォーム」からメールアドレスをご登録ください。その後、ご登録いただいたメールアドレス宛に「参加登録フォーム」のURLが記載されたメールが届きます。              
-                 <br>　</h4><b><strike>近畿植物学会 第14回講演会（2025年度）メールアドレス確認フォーム</strike></b></p>
-              <h4 style="display:inline;">日時 : </h4>2025年11月8日（土）13:00〜18:00<br>
-              <p></p>
-              <h4 style="display:inline;">会場 : </h4><a href= "http://www.sci.kobe-u.ac.jp/access-contact/" ><b>神戸大学・理学部Z201/Z202（六甲台第２キャンパス）</b></a>
-              <p></p>
-              <h4 style="display:inline;">参加費 : </h4>100円（当日現金で集めます。ワンコインでのご準備をお願いします。）
-              <p></p>
-              <h4>総会（13:00〜13:15)</h4>
-              <h4>特別講演（13:15〜14:45)</h4>
-              <p>　稲田　のりこ
-                <br>　大阪公立大学 大学院農学研究科
-                <br>「植物アクチン繊維の新機能解析」</p>
-              <p>　工藤　洋
-                <br>　京都大学 生態学研究センター
-                <br>「ヒストン抑制修飾H3K27me3介在型プロモーターの発見と利用」</p>                
-              <p>　田村　実
-                <br>　京都大学 大学院理学研究科
-		<br>「単子葉植物を追いかけて」</p>
+        <main id="content">
 
-              <h4>一般講演・口頭発表 (15:00～16:48)</h4>
-
-              <h4>ポスター発表 (17:00～18:00)</h4>
-            
-              <h4>交流会 (18:00〜20:00)</h4>
-                <p>　参加費：学生以外3,000円、学生1,000円
-                <br>　会場：神戸大学理学部Z201/Z202（2F）           
-                <br>　交流会参加予定の方は人数の把握のため、事前参加登録をお願いします（11月4日（火）まで）。  
-                <br>　ポスターを見ながら引き続きディスカッションができます。ピザ、寿司、軽食、アルコール飲料、ソフトドリンクなどを準備しますので、ぜひ皆様奮ってご参加ください。お酒などの持ち込みも歓迎いたします。           
-
-                <p><span style="text-decoration: underline;">プログラムはこちらから</span> → <a class="button" href="Program_2025.pdf">プログラム</a></p>
-
-
-              <p></p>
-              <p></p>
-             
-              <div class="box">
-                  <a href="index.html">TOPページに戻る</a>
-              </div>
+            <section class="hero program-hero">
+                <div class="hero-message">
+                    <p class="eyebrow">Program</p>
+                    <h2>2026年度（第15回）近畿植物学会講演会</h2>
+                    <p>
+                        2026年度講演会の情報を掲載するページです。詳細は決まり次第、順次更新します。
+                    </p>
+                </div>
             </section>
-        </article>
+
+            <section class="section-block" aria-labelledby="program-heading">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Overview</p>
+                        <h3 id="program-heading">現在のご案内</h3>
+                    </div>
+                </div>
+
+                <div class="program-block">
+
+                    <section class="program-section">
+                        <h4>2026年度講演会について</h4>
+                        <p>
+                            2026年度（第15回）近畿植物学会講演会は開催を予定しています。
+                            日時、会場、参加登録方法、演題登録、要旨提出、当日のプログラムなどの詳細は現在調整中です。
+                        </p>
+                    </section>
+
+                    <section class="program-section">
+                        <h4>今後掲載する情報</h4>
+                        <div class="status-box">
+                            <p>詳細が決まり次第、このページで以下の情報を順次お知らせします。</p>
+                            <ol class="status-list">
+                                <li>開催日時</li>
+                                <li>会場</li>
+                                <li>参加登録・演題登録方法</li>
+                                <li>要旨提出に関する案内</li>
+                                <li>講演・発表プログラム</li>
+                            </ol>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="back-link-box">
+                    <p><a href="index.html">トップページに戻る</a></p>
+                </div>
+            </section>
+
+        </main>
     </div>
-<footer>
-<p>Copyright (C) 2026 近畿植物学会. All Rights Reserved. </p>
-</footer>
+
+    <footer>
+        <p>Copyright (C) 2026 近畿植物学会. All Rights Reserved.</p>
+    </footer>
+
 </div>
 </body>
 </html>

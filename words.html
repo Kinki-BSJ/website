@@ -2,17 +2,83 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<title>近畿植物学会</title>
+<title>近畿植物学会 | 沿革</title>
+<style>
+.history-intro {
+    margin-bottom: 36px;
+}
+
+.history-layout {
+    display: grid;
+    gap: 20px;
+}
+
+.history-card {
+    padding: 28px 28px 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.history-card p:last-child {
+    margin-bottom: 0;
+}
+
+.history-highlight {
+    margin-top: 18px;
+    padding: 16px 18px;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    color: #334155;
+}
+
+.resource-card {
+    padding: 24px 24px 22px;
+    background: linear-gradient(135deg, #f8fbff 0%, #f8fafc 100%);
+    border: 1px solid #dbe3ee;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.resource-card h4 {
+    margin: 0 0 10px;
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.resource-card p {
+    margin: 0 0 14px;
+    color: #475569;
+}
+
+.resource-card .button {
+    margin-left: 0;
+}
+
+.back-link-box {
+    margin-top: 36px;
+    padding: 18px 20px;
+    background: #f8fbff;
+    border: 1px solid #dbe3ee;
+    border-radius: 16px;
+}
+
+.back-link-box p {
+    margin: 0;
+}
+</style>
 </head>
+
 <body>
 <div id="bg">
-    <header>
-        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
-    </header>
+
     <nav>
-        <ul class="cf">
+        <ul>
             <li>
                 <a href="index.html">ホーム<span>Home</span></a>
             </li>
@@ -33,21 +99,78 @@
             </li>
         </ul>
     </nav>
+
+    <header>
+        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
+    </header>
+
     <div id="wrap">
-        <article id="content">
-            <h2>沿革</h2>
-            <section>
-                <p>近畿植物学会は、日本植物学会と共同して、植物学の進歩に寄与するための諸活動を行い、併せて会員相互の研究交流と親睦を図ることを目的とし、日本植物学会近畿支部を母体に2011年12月に設立されました。</p>
-                <p><span style="text-decoration: underline;">過去のプログラムはこちらから</span> → <a class="button" href="Program_Past_1993-2025.pdf">Pastプログラム</a></p>
-                <div class="box">
-                    <a href="index.html">TOPページに戻る</a>
+        <main id="content">
+
+            <section class="hero history-intro">
+                <div class="hero-message">
+                    <p class="eyebrow">History</p>
+                    <h2>沿革</h2>
+                    <p>
+                        近畿植物学会の設立の背景とこれまでの歩みについて紹介します。
+                    </p>
                 </div>
             </section>
-        </article>
+
+            <section class="section-block" aria-labelledby="history-heading">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Overview</p>
+                        <h3 id="history-heading">学会の歩み</h3>
+                    </div>
+                </div>
+
+                <div class="history-layout">
+                    <div class="history-card">
+                        <p>
+                            近畿植物学会は、日本植物学会と共同して、植物学の進歩に寄与するための諸活動を行い、
+                            あわせて会員相互の研究交流と親睦を図ることを目的として設立されました。
+                        </p>
+                        <p>
+                            その母体は日本植物学会近畿支部であり、2011年12月に近畿植物学会として発足しました。
+                        </p>
+
+                        <div class="history-highlight">
+                            日本植物学会近畿支部を基盤として設立され、研究交流と親睦の場として活動を続けています。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block" aria-labelledby="archive-heading">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Archive</p>
+                        <h3 id="archive-heading">過去のプログラム</h3>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <h4>過去の開催情報・プログラム</h4>
+                    <p>
+                        これまでの講演会プログラムをPDFでまとめて公開しています。
+                        学会の歩みや開催履歴を確認したい場合はこちらをご覧ください。
+                    </p>
+                    <a class="button" href="Program_Past_1993-2025.pdf">過去のプログラムを見る</a>
+                </div>
+
+                <div class="back-link-box">
+                    <p><a href="index.html">トップページに戻る</a></p>
+                </div>
+            </section>
+
+        </main>
     </div>
-<footer>
-<p>Copyright (C) 2026 近畿植物学会. All Rights Reserved. </p>
-</footer>
+
+    <footer>
+        <p>Copyright (C) 2026 近畿植物学会. All Rights Reserved.</p>
+    </footer>
+
 </div>
 </body>
 </html>

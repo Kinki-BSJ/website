@@ -2,17 +2,122 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
-<title>近畿植物学会</title>
+<title>近畿植物学会 | 事務局</title>
+<style>
+.contact-intro {
+    margin-bottom: 36px;
+}
+
+.contact-block {
+    padding: 28px 28px 24px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    line-height: 1.9;
+}
+
+.contact-section + .contact-section {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.contact-section h4 {
+    margin: 0 0 12px;
+    font-size: 1.08rem;
+    color: #0f172a;
+}
+
+.contact-section p {
+    margin: 0;
+    color: #475569;
+}
+
+.contact-note {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.officer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.officer-table th,
+.officer-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    vertical-align: top;
+}
+
+.officer-table th {
+    width: 140px;
+    font-weight: 700;
+    color: #2563eb;
+    background: #f8fbff;
+}
+
+.officer-table td {
+    color: #475569;
+}
+
+.back-link-box {
+    margin-top: 36px;
+    padding: 18px 20px;
+    background: #f8fbff;
+    border: 1px solid #dbe3ee;
+    border-radius: 16px;
+}
+
+.back-link-box p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-block {
+        padding: 22px 20px 20px;
+    }
+
+    .officer-table,
+    .officer-table tbody,
+    .officer-table tr,
+    .officer-table th,
+    .officer-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .officer-table tr {
+        padding: 12px 0;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .officer-table th {
+        border-bottom: none;
+        padding: 0 0 6px;
+        background: none;
+    }
+
+    .officer-table td {
+        padding: 0;
+        border-bottom: none;
+    }
+}
+</style>
 </head>
+
 <body>
 <div id="bg">
-    <header>
-        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
-    </header>
+
     <nav>
-        <ul class="cf">
+        <ul>
             <li>
                 <a href="index.html">ホーム<span>Home</span></a>
             </li>
@@ -33,38 +138,96 @@
             </li>
         </ul>
     </nav>
+
+    <header>
+        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
+    </header>
+
     <div id="wrap">
-        <article id="content">
-            <h2>事務局</h2>
-            <section>
-                <h4>事務局</h4>
-                <p>京都大学生態学研究センター　工藤研究室<br />〒520-2113　滋賀県大津市平野2丁目509-3１</p>
-                <h4>連絡先</h4>
-                <p>京都大学生態学研究センター　工藤　洋<br />メールアドレス： kudoh(at)ecology.kyoto-u.ac.jp<br />※お手数ですが（at)は@に置き換えてください。<br />TEL： 077-549-8255<br /></p>
-                <h4>役員</h4>
-                <table class="noborder">
-                    <tr>
-                        <td>会長</td><td>工藤 洋</td><td>京都大学生態学研究センター</td>
-                    </tr>
-                    <tr>
-                        <td>庶務幹事</td><td>西尾 治幾</td><td>滋賀大学データサイエンス・AIイノベーション研究推進センター</td>
-                    </tr>
-                    <tr>
-                        <td>会計幹事</td><td>荒木 希和子</td><td>滋賀県立大学環境科学部</td>
-                    </tr>
-                    <tr>
-                        <td>会計監査</td><td>樋口 裕美子</td><td>京都大学生態学研究センター</td>
-                    </tr>
-                </table>
-                <div class="box">
-                    <a href="index.html">TOPページに戻る</a>
+        <main id="content">
+
+            <section class="hero contact-intro">
+                <div class="hero-message">
+                    <p class="eyebrow">Contact</p>
+                    <h2>事務局・お問い合わせ</h2>
+                    <p>
+                        近畿植物学会の事務局情報、連絡先、役員一覧を掲載しています。
+                    </p>
                 </div>
             </section>
-        </article>
+
+            <section class="section-block" aria-labelledby="contact-heading">
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label">Office</p>
+                        <h3 id="contact-heading">事務局情報</h3>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+
+                    <section class="contact-section">
+                        <h4>事務局</h4>
+                        <p>
+                            京都大学生態学研究センター 工藤研究室<br>
+                            〒520-2113 滋賀県大津市平野2丁目509-31
+                        </p>
+                    </section>
+
+                    <section class="contact-section">
+                        <h4>連絡先</h4>
+                        <p>
+                            京都大学生態学研究センター 工藤 洋<br>
+                            メールアドレス：kudoh(at)ecology.kyoto-u.ac.jp<br>
+                            TEL：077-549-8255
+                        </p>
+                        <p class="contact-note">
+                            ※メール送信の際は、(at) を @ に置き換えてください。
+                        </p>
+                    </section>
+
+                    <section class="contact-section">
+                        <h4>役員</h4>
+                        <table class="officer-table">
+                            <tbody>
+                                <tr>
+                                    <th>会長</th>
+                                    <td>工藤 洋</td>
+                                    <td>京都大学生態学研究センター</td>
+                                </tr>
+                                <tr>
+                                    <th>庶務幹事</th>
+                                    <td>西尾 治幾</td>
+                                    <td>滋賀大学データサイエンス・AIイノベーション研究推進センター</td>
+                                </tr>
+                                <tr>
+                                    <th>会計幹事</th>
+                                    <td>荒木 希和子</td>
+                                    <td>滋賀県立大学環境科学部</td>
+                                </tr>
+                                <tr>
+                                    <th>会計監査</th>
+                                    <td>樋口 裕美子</td>
+                                    <td>京都大学生態学研究センター</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+
+                <div class="back-link-box">
+                    <p><a href="index.html">トップページに戻る</a></p>
+                </div>
+            </section>
+
+        </main>
     </div>
-<footer>
-<p>Copyright (C) 2026 近畿植物学会. All Rights Reserved. </p>
-</footer>
+
+    <footer>
+        <p>Copyright (C) 2026 近畿植物学会. All Rights Reserved.</p>
+    </footer>
+
 </div>
 </body>
 </html>
