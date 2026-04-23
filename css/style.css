@@ -4,14 +4,14 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
     line-height: 1.7;
     margin: 0;
-    background: linear-gradient(180deg, #f8fbff 0%, #f3f6fb 100%);
+    background: #f8fafc;
     color: #1f2937;
 }
 
 #bg {
-    max-width: 1120px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px 40px;
+    padding: 0 32px 48px;
 }
 
 .cf {
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 }
 
 header h1 {
@@ -30,16 +30,18 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+    border-radius: 0;
+    box-shadow: none;
 }
 
 nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding-top: 12px;
-    margin-bottom: 24px;
+    padding-top: 8px;
+    margin-bottom: 32px;
+    background: rgba(248, 250, 252, 0.92);
+    backdrop-filter: blur(8px);
 }
 
 nav ul {
@@ -48,13 +50,13 @@ nav ul {
     justify-content: center;
     gap: 12px;
     margin: 0;
-    padding: 12px 16px;
+    padding: 12px 0;
     list-style: none;
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(203, 213, 225, 0.7);
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 nav ul li {
@@ -68,12 +70,12 @@ nav ul li a {
     padding: 12px 18px;
     border: none;
     border-radius: 999px;
-    background-color: #ffffff;
+    background-color: transparent;
     text-decoration: none;
     font-weight: 700;
     color: #24426a;
-    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav ul li a span {
@@ -89,8 +91,8 @@ nav ul li a:hover,
 nav ul li.active a {
     background-color: #24426a;
     color: #ffffff;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(36, 66, 106, 0.24);
+    transform: none;
+    box-shadow: none;
 }
 
 nav ul li a:hover span,
@@ -99,12 +101,12 @@ nav ul li.active a span {
 }
 
 #wrap {
-    background-color: rgba(255, 255, 255, 0.88);
-    padding: 40px 48px 56px;
+    background: transparent;
+    padding: 24px 0 56px;
     font-size: 1rem;
-    border: 1px solid rgba(226, 232, 240, 0.95);
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 #content {
@@ -120,10 +122,10 @@ nav ul li.active a span {
 }
 
 .hero-message {
-    padding: 34px 36px;
-    background: linear-gradient(135deg, #eef5ff 0%, #f8fbff 100%);
-    border: 1px solid #dbeafe;
-    border-radius: 24px;
+    padding: 12px 0 8px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
 }
 
 .eyebrow {
@@ -140,7 +142,7 @@ nav ul li.active a span {
     padding: 0;
     border: none;
     background: none;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     font-weight: 800;
     color: #0f172a;
 }
@@ -149,14 +151,21 @@ nav ul li.active a span {
     margin: 0;
     color: #475569;
     font-size: 1rem;
+    max-width: 760px;
 }
 
-.section-block + .section-block {
-    margin-top: 44px;
+.section-block {
+    padding: 40px 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.section-block:first-of-type {
+    border-top: none;
+    padding-top: 0;
 }
 
 .section-heading {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .section-label {
@@ -180,7 +189,7 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 800;
     line-height: 1.4;
     padding: 0;
@@ -202,7 +211,8 @@ h4 {
 
 #content p,
 #content ol,
-#content ul {
+#content ul,
+#content dl {
     margin-bottom: 1.2em;
 }
 
@@ -220,23 +230,71 @@ h4 {
     color: #6d28d9;
 }
 
+.page-intro {
+    margin-bottom: 36px;
+}
+
+.content-narrow {
+    max-width: 860px;
+}
+
+.content-wide {
+    max-width: 980px;
+}
+
+.stack-section + .stack-section {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.note-text {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.note-soft {
+    margin-top: 18px;
+    padding: 16px 18px;
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+}
+
+.note-soft p,
+.note-soft ol,
+.note-soft ul {
+    margin-bottom: 0;
+}
+
+.back-link {
+    margin-top: 36px;
+}
+
+.back-link p {
+    margin: 0;
+}
+
 .news-list {
     display: grid;
-    gap: 16px;
+    gap: 0;
     margin: 0;
     padding: 0;
     list-style: none;
+    border-top: 1px solid #e5e7eb;
 }
 
 .news-item {
     display: grid;
     grid-template-columns: 150px 1fr;
-    gap: 20px;
-    padding: 20px 22px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    gap: 24px;
+    padding: 22px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #e5e7eb;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .news-date {
@@ -259,26 +317,8 @@ h4 {
     font-weight: 600;
 }
 
-.link-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-}
-
-.link-card {
-    padding: 22px 22px 20px;
-    background: #f8fbff;
-    border: 1px solid #dbe3ee;
-    border-radius: 18px;
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.03);
-}
-
-.link-card p {
-    margin: 0 0 12px;
-    color: #475569;
-}
-
-th, td {
+th,
+td {
     border: 1px solid #d1d5db;
     padding: 0.75em 1em;
     font-weight: normal;
@@ -302,12 +342,12 @@ table {
 }
 
 .box {
-    padding: 1.25em 1.5em;
-    font-size: 1.05em;
-    background-color: #f8fafc;
-    border: 1px solid #dbe3ee;
-    border-radius: 14px;
-    margin-top: 3em;
+    padding: 0;
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-top: 2.5em;
 }
 
 .kiyaku dd {
@@ -315,12 +355,11 @@ table {
 }
 
 .kiyaku ol {
-    padding-left: 0;
+    padding-left: 1.5em;
 }
 
 .kiyaku ol li {
-    list-style: disc;
-    margin-left: 1.5em;
+    margin-left: 0;
 }
 
 .husoku {
@@ -330,11 +369,11 @@ table {
 
 .button {
     display: inline-block;
-    padding: 0.7em 1.2em;
+    padding: 0.75em 1.25em;
     border: none;
-    border-radius: 10px;
+    border-radius: 999px;
     background-color: #2563eb;
-    margin-left: 0.5em;
+    margin-left: 0;
     text-decoration: none;
     font-weight: 600;
 }
@@ -349,7 +388,8 @@ table {
 }
 
 footer {
-    padding: 26px 0 6px;
+    padding: 32px 0 8px;
+    border-top: 1px solid #e5e7eb;
 }
 
 footer p {
@@ -362,19 +402,22 @@ footer p {
 
 @media (max-width: 768px) {
     #bg {
-        padding: 0 12px 28px;
+        padding: 0 16px 28px;
+    }
+
+    header {
+        margin-bottom: 24px;
     }
 
     nav {
-        padding-top: 8px;
-        margin-bottom: 18px;
+        padding-top: 0;
+        margin-bottom: 20px;
     }
 
     nav ul {
         justify-content: flex-start;
-        gap: 10px;
-        padding: 10px;
-        border-radius: 14px;
+        gap: 8px;
+        padding: 10px 0;
     }
 
     nav ul li {
@@ -387,17 +430,15 @@ footer p {
     }
 
     #wrap {
-        padding: 24px 20px 32px;
-        border-radius: 18px;
+        padding: 20px 0 32px;
     }
 
     .hero-message {
-        padding: 24px 20px;
-        border-radius: 18px;
+        padding: 8px 0 4px;
     }
 
     .hero-message h2 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     h3 {
@@ -406,11 +447,7 @@ footer p {
 
     .news-item {
         grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 18px 16px;
-    }
-
-    .link-grid {
-        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 18px 0;
     }
 }

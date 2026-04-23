@@ -7,42 +7,6 @@
 <link rel="stylesheet" href="css/style.css">
 <title>近畿植物学会 | 事務局</title>
 <style>
-.contact-intro {
-    margin-bottom: 36px;
-}
-
-.contact-block {
-    padding: 28px 28px 24px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 20px;
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
-    line-height: 1.9;
-}
-
-.contact-section + .contact-section {
-    margin-top: 32px;
-    padding-top: 28px;
-    border-top: 1px solid #e5e7eb;
-}
-
-.contact-section h4 {
-    margin: 0 0 12px;
-    font-size: 1.08rem;
-    color: #0f172a;
-}
-
-.contact-section p {
-    margin: 0;
-    color: #475569;
-}
-
-.contact-note {
-    margin-top: 12px;
-    color: #64748b;
-    font-size: 0.95rem;
-}
-
 .officer-table {
     width: 100%;
     border-collapse: collapse;
@@ -51,7 +15,7 @@
 
 .officer-table th,
 .officer-table td {
-    padding: 12px 14px;
+    padding: 14px 12px;
     border-bottom: 1px solid #e5e7eb;
     text-align: left;
     vertical-align: top;
@@ -61,30 +25,15 @@
     width: 140px;
     font-weight: 700;
     color: #2563eb;
-    background: #f8fbff;
+    background: transparent;
+    white-space: nowrap;
 }
 
 .officer-table td {
     color: #475569;
 }
 
-.back-link-box {
-    margin-top: 36px;
-    padding: 18px 20px;
-    background: #f8fbff;
-    border: 1px solid #dbe3ee;
-    border-radius: 16px;
-}
-
-.back-link-box p {
-    margin: 0;
-}
-
 @media (max-width: 768px) {
-    .contact-block {
-        padding: 22px 20px 20px;
-    }
-
     .officer-table,
     .officer-table tbody,
     .officer-table tr,
@@ -95,7 +44,7 @@
     }
 
     .officer-table tr {
-        padding: 12px 0;
+        padding: 14px 0;
         border-bottom: 1px solid #e5e7eb;
     }
 
@@ -106,16 +55,18 @@
     }
 
     .officer-table td {
-        padding: 0;
+        padding: 0 0 6px;
         border-bottom: none;
+    }
+
+    .officer-table td:last-child {
+        padding-bottom: 0;
     }
 }
 </style>
 </head>
-
 <body>
 <div id="bg">
-
     <nav>
         <ul>
             <li>
@@ -125,7 +76,7 @@
                 <a href="words.html">沿革<span>History</span></a>
             </li>
             <li>
-                <a href="announce.html">規約<span>Code</span></a>
+                <a href="announce.html">規約<span>Constitution</span></a>
             </li>
             <li>
                 <a href="program.html">プログラム<span>Program</span></a>
@@ -140,19 +91,16 @@
     </nav>
 
     <header>
-        <h1><img src="images/logo.jpg" alt="近畿植物学会" /></h1>
+        <h1><img src="images/logo.jpg" alt="近畿植物学会"></h1>
     </header>
 
     <div id="wrap">
         <main id="content">
-
-            <section class="hero contact-intro">
+            <section class="hero page-intro">
                 <div class="hero-message">
                     <p class="eyebrow">Contact</p>
                     <h2>事務局・お問い合わせ</h2>
-                    <p>
-                        近畿植物学会の事務局情報、連絡先、役員一覧を掲載しています。
-                    </p>
+                    <p>近畿植物学会の事務局情報、連絡先、役員一覧を掲載しています。</p>
                 </div>
             </section>
 
@@ -164,9 +112,8 @@
                     </div>
                 </div>
 
-                <div class="contact-block">
-
-                    <section class="contact-section">
+                <div class="content-wide">
+                    <section class="stack-section">
                         <h4>事務局</h4>
                         <p>
                             京都大学生態学研究センター 工藤研究室<br>
@@ -174,19 +121,17 @@
                         </p>
                     </section>
 
-                    <section class="contact-section">
+                    <section class="stack-section">
                         <h4>連絡先</h4>
                         <p>
                             京都大学生態学研究センター 工藤 洋<br>
                             メールアドレス：kudoh(at)ecology.kyoto-u.ac.jp<br>
                             TEL：077-549-8255
                         </p>
-                        <p class="contact-note">
-                            ※メール送信の際は、(at) を @ に置き換えてください。
-                        </p>
+                        <p class="note-text">※メール送信の際は、(at) を @ に置き換えてください。</p>
                     </section>
 
-                    <section class="contact-section">
+                    <section class="stack-section">
                         <h4>役員</h4>
                         <table class="officer-table">
                             <tbody>
@@ -213,21 +158,18 @@
                             </tbody>
                         </table>
                     </section>
-
                 </div>
 
-                <div class="back-link-box">
+                <div class="back-link">
                     <p><a href="index.html">トップページに戻る</a></p>
                 </div>
             </section>
-
         </main>
     </div>
 
     <footer>
         <p>Copyright (C) 2026 近畿植物学会. All Rights Reserved.</p>
     </footer>
-
 </div>
 </body>
 </html>
