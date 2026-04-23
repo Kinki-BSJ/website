@@ -6,47 +6,8 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/style.css">
 <title>近畿植物学会</title>
-<style>
-.news-more {
-    margin-top: 20px;
-}
-
-.news-more summary {
-    display: inline-block;
-    cursor: pointer;
-    list-style: none;
-    font-weight: 700;
-    color: #24426a;
-    padding: 10px 16px;
-    border: 1px solid #d1d9e6;
-    border-radius: 999px;
-    background: #ffffff;
-    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.news-more summary::-webkit-details-marker {
-    display: none;
-}
-
-.news-more summary:hover {
-    background-color: #24426a;
-    color: #ffffff;
-    border-color: #24426a;
-}
-
-.news-more[open] summary {
-    margin-bottom: 20px;
-    background-color: #24426a;
-    color: #ffffff;
-    border-color: #24426a;
-}
-
-.archive-link {
-    max-width: 720px;
-}
-</style>
 </head>
-<body>
+<body class="home">
 <div id="bg">
     <nav>
         <ul>
@@ -71,127 +32,127 @@
         </ul>
     </nav>
 
-    <header>
-        <h1><img src="images/logo.jpg" alt="近畿植物学会"></h1>
-    </header>
+    <section class="home-hero" aria-label="近畿植物学会メインビジュアル">
+        <div class="home-hero-inner">
+            <div class="home-hero-copy">
+                <p class="eyebrow">Kinki Botanical Society</p>
+                <h1>近畿植物学会</h1>
+                <p>
+                    近畿植物学会の公式ウェブサイトです。講演会の開催情報、プログラム、
+                    規約、会場案内、事務局情報などを掲載しています。
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <div id="wrap">
-        <main id="content">
-            <section class="hero">
-                <div class="hero-message">
-                    <p class="eyebrow">Kinki Botanical Society</p>
-                    <h2>近畿植物学会</h2>
-                    <p>
-                        近畿植物学会の公式ウェブサイトです。講演会の開催情報、プログラム、
-                        規約、会場案内、事務局情報などを掲載しています。
-                    </p>
-                </div>
-            </section>
-
-            <section class="section-block" aria-labelledby="news-heading">
-                <div class="section-heading">
-                    <div>
-                        <p class="section-label">News</p>
-                        <h3 id="news-heading">お知らせ</h3>
+    <div id="wrap" class="home-main">
+        <main id="content" class="home-panel">
+            <div class="panel-inner">
+                <section class="section-block home-news" aria-labelledby="news-heading">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-label">News</p>
+                            <h3 id="news-heading">お知らせ</h3>
+                        </div>
                     </div>
-                </div>
 
-                <ul class="news-list">
-                    <li class="news-item">
-                        <div class="news-date">2026/01/01</div>
-                        <div class="news-body">
-                            <p>事務局が京都大学生態学研究センターに変わりました。</p>
-                        </div>
-                    </li>
-                    <li class="news-item">
-                        <div class="news-date">2025/10/31</div>
-                        <div class="news-body">
-                            <p>第14回講演会のプログラムを更新しました。</p>
-                        </div>
-                    </li>
-                    <li class="news-item">
-                        <div class="news-date">2025/10/01</div>
-                        <div class="news-body">
-                            <p>第14回講演会のプログラムを更新しました。</p>
-                            <p class="notice-closed">参加・演題・要旨登録受付は終了しました。</p>
-                            <p class="notice-closed">発表を希望する方は10月24日(金)、参加のみの方は11月4日(火)で締め切りました。</p>
-                        </div>
-                    </li>
-                    <li class="news-item">
-                        <div class="news-date">2025/07/10</div>
-                        <div class="news-body">
-                            <p>第14回講演会の開催日・会場が決まりました。</p>
-                        </div>
-                    </li>
-                    <li class="news-item">
-                        <div class="news-date">2024/10/13</div>
-                        <div class="news-body">
-                            <p>第13回講演会のプログラムを更新しました。</p>
-                            <p class="notice-closed">参加・演題・要旨登録受付は終了しました。</p>
-                            <p class="notice-closed">発表を希望する方は11月4日(月)、参加のみの方は11月14日(木)で締め切りました。</p>
-                        </div>
-                    </li>
-                </ul>
-
-                <details class="news-more">
-                    <summary>もっと見る</summary>
                     <ul class="news-list">
                         <li class="news-item">
-                            <div class="news-date">2024/01/01</div>
+                            <div class="news-date">2026/01/01</div>
                             <div class="news-body">
-                                <p>事務局が変わりました。</p>
+                                <p>事務局が京都大学生態学研究センターに変わりました。</p>
                             </div>
                         </li>
                         <li class="news-item">
-                            <div class="news-date">2023/12/04</div>
+                            <div class="news-date">2025/10/31</div>
                             <div class="news-body">
-                                <p>過去のプログラムを更新しました。</p>
+                                <p>第14回講演会のプログラムを更新しました。</p>
                             </div>
                         </li>
                         <li class="news-item">
-                            <div class="news-date">2023/11/24</div>
+                            <div class="news-date">2025/10/01</div>
                             <div class="news-body">
-                                <p>第12回講演会のプログラムを更新しました。</p>
-                                <p class="notice-closed">参加登録受付は終了しました。</p>
-                            </div>
-                        </li>
-                        <li class="news-item">
-                            <div class="news-date">2023/10/06</div>
-                            <div class="news-body">
-                                <p>第12回講演会のプログラムを更新しました。</p>
+                                <p>第14回講演会のプログラムを更新しました。</p>
                                 <p class="notice-closed">参加・演題・要旨登録受付は終了しました。</p>
+                                <p class="notice-closed">発表を希望する方は10月24日(金)、参加のみの方は11月4日(火)で締め切りました。</p>
                             </div>
                         </li>
                         <li class="news-item">
-                            <div class="news-date">2023/06/14</div>
+                            <div class="news-date">2025/07/10</div>
                             <div class="news-body">
-                                <p>第12回講演会の開催日・会場・特別講演の演者が決まりました。</p>
+                                <p>第14回講演会の開催日・会場が決まりました。</p>
+                            </div>
+                        </li>
+                        <li class="news-item">
+                            <div class="news-date">2024/10/13</div>
+                            <div class="news-body">
+                                <p>第13回講演会のプログラムを更新しました。</p>
+                                <p class="notice-closed">参加・演題・要旨登録受付は終了しました。</p>
+                                <p class="notice-closed">発表を希望する方は11月4日(月)、参加のみの方は11月14日(木)で締め切りました。</p>
                             </div>
                         </li>
                     </ul>
-                </details>
-            </section>
 
-            <section class="section-block" aria-labelledby="archive-heading">
-                <div class="section-heading">
-                    <div>
-                        <p class="section-label">Archive</p>
-                        <h3 id="archive-heading">過去のプログラム</h3>
+                    <details class="news-more">
+                        <summary>もっと見る</summary>
+                        <ul class="news-list">
+                            <li class="news-item">
+                                <div class="news-date">2024/01/01</div>
+                                <div class="news-body">
+                                    <p>事務局が変わりました。</p>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <div class="news-date">2023/12/04</div>
+                                <div class="news-body">
+                                    <p>過去のプログラムを更新しました。</p>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <div class="news-date">2023/11/24</div>
+                                <div class="news-body">
+                                    <p>第12回講演会のプログラムを更新しました。</p>
+                                    <p class="notice-closed">参加登録受付は終了しました。</p>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <div class="news-date">2023/10/06</div>
+                                <div class="news-body">
+                                    <p>第12回講演会のプログラムを更新しました。</p>
+                                    <p class="notice-closed">参加・演題・要旨登録受付は終了しました。</p>
+                                </div>
+                            </li>
+                            <li class="news-item">
+                                <div class="news-date">2023/06/14</div>
+                                <div class="news-body">
+                                    <p>第12回講演会の開催日・会場・特別講演の演者が決まりました。</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </details>
+                </section>
+
+                <section class="section-block" aria-labelledby="archive-heading">
+                    <div class="section-heading">
+                        <div>
+                            <p class="section-label">Archive</p>
+                            <h3 id="archive-heading">過去のプログラム</h3>
+                        </div>
                     </div>
-                </div>
 
-                <div class="archive-link">
-                    <p>
-                        これまでの講演会プログラムをPDFでまとめて公開しています。
-                        開催履歴や過去のプログラムを確認したい場合はこちらをご覧ください。
-                    </p>
-                    <p><a class="button" href="Program_Past_1993-2025.pdf">過去のプログラムを見る</a></p>
-                </div>
-            </section>
+                    <div class="archive-link">
+                        <p>
+                            これまでの講演会プログラムをPDFでまとめて公開しています。
+                            開催履歴や過去のプログラムを確認したい場合はこちらをご覧ください。
+                        </p>
+                        <p><a class="button" href="Program_Past_1993-2025.pdf">過去のプログラムを見る</a></p>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
 
-    <footer>
+    <footer class="home-footer">
         <p>Copyright (C) 2026 近畿植物学会. All Rights Reserved.</p>
     </footer>
 </div>
